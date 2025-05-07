@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #3a86ff;
+  font-weight: 600;
+  margin: 30px auto 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+:root {
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-border: #e2e8f0;
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-text: #0f172a;
+  --color-subtext: #64748b;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+h1 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4a90e2;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.app {
+  width: 100%;
+  max-width: 88rem;
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: minmax(30rem, 36rem) minmax(40rem, 46rem);
+  gap: 3.2rem;
+  align-items: start;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.sidebar {
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  padding: 2.4rem;
+  box-shadow: var(--shadow);
+  width: 100%;
+  border: 1px solid var(--color-border);
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar li {
+  display: grid;
+  grid-template-columns: 4.8rem 1fr auto;
+  align-items: center;
+  column-gap: 1.2rem;
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.sidebar li:hover {
+  background-color: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.sidebar li.selected {
+  background-color: #f0f4ff;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.sidebar li img {
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  border: 2px solid #f1f5f9;
+  transition: var(--transition);
+}
+
+.sidebar li:hover img {
+  border-color: #e0e7ff;
+}
+
+.sidebar li.selected img {
+  border-color: var(--color-primary);
+}
+
+.sidebar li h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar li p {
+  font-size: 1.3rem;
+  color: var(--color-subtext);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar li .button {
+  grid-row: span 2;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.3rem;
+}
+
+.sidebar > .button {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+
+.form-add-friend,
+.form-split-bill {
+  display: grid;
+  gap: 1.8rem;
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  padding: 2.8rem;
+  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+  border: 1px solid var(--color-border);
+}
+
+.form-add-friend {
+  grid-template-columns: 1fr;
+}
+
+.form-split-bill {
+  grid-template-columns: 1fr 12rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-weight: 500;
+  color: var(--color-subtext);
+  font-size: 1.4rem;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1rem 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: #ffffff;
+  color: var(--color-text);
+  transition: var(--transition);
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.gender-options {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 0.6rem;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.gender-options input[type="radio"] {
+  margin: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gender-options input[type="radio"]:hover {
+  transform: scale(1.1);
+}
+
+form .button {
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+form h2 {
+  grid-column: 1 / -1;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+form h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.green {
+  color: #059669;
+}
+
+.red {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1.6rem;
+    height: auto;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+    max-width: 100%;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  form {
+    order: 1;
+  }
+}
