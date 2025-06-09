@@ -63,7 +63,15 @@ export default function App() {
 
   return (
     <>
+<<<<<<< HEAD
       <h1 className="logo">Fai₹Share</h1>
+=======
+      <div className="logo-wrapper">
+        <img src="/logo.svg" alt="Fai₹Share logo" className="logo-img" />
+        <h1 className="logo">Fai₹Share</h1>
+      </div>
+
+>>>>>>> gh-pages
       <div className="app">
         <div className="sidebar">
           <FriendList
@@ -80,6 +88,10 @@ export default function App() {
           <FormSplitBill
             selectedFriend={selectedFriend}
             onSplitBill={handleSplitBillValue}
+<<<<<<< HEAD
+=======
+            key={selectedFriend.id}
+>>>>>>> gh-pages
           />
         )}
       </div>
