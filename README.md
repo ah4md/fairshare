@@ -1,12 +1,89 @@
-# React + Vite
+# 💸 Fai₹Share - Bill Splitting App
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Fai₹Share** is a modern and lightweight bill-splitting web app built with **React + Vite**, designed to make tracking shared expenses with friends simple and intuitive.
 
-Currently, two official plugins are available:
+> 🚀 [Live Demo on Vercel](https://fairshare-ten.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 👥 **Add Friends** – Name, gender, and a fun avatar (via Dicebear)
+* 💸 **Split Bills** – Track who owes whom
+* 🔄 **Smart Balance Update** – Real-time, per-friend balance calculations
+* 🧭 **Interactive UI** – Clean, responsive, and smooth transitions
+* ⚙️ **Built with Vite** – Fast development experience and optimized build
+
+---
+
+## 🧪 Tech Stack
+
+* 🛠️ **React** (with Hooks)
+* ⚡ **Vite** – Super fast bundler and dev server
+* 🎨 **CSS** – Custom styling
+* 🧑‍🎨 **Dicebear Avatars API** – Dynamic SVG avatar generation
+* ☁️ **Vercel** – Free and fast hosting
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── App.jsx           # Main component
+├── App.css           # App styling
+├── index.js          # Entry point
+public/
+└── logo.svg          # App logo
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/fairshare.git
+cd fairshare
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser at `http://localhost:5173`
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 🔗 Deployment
+
+This app is deployed using [**Vercel**](https://vercel.com). To deploy yourself:
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import the project from GitHub
+4. Set the framework to **Vite**
+5. Deploy!
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for more information.
