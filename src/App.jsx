@@ -51,6 +51,7 @@ export default function App() {
     setSelectedFriend((cur) => (cur?.id === friend.id ? null : friend));
     setShowAddF(false);
   }
+
   function handleSplitBillValue(value) {
     setFriends((friends) =>
       friends.map((friend) =>
@@ -63,15 +64,11 @@ export default function App() {
 
   return (
     <>
-<<<<<<< HEAD
-      <h1 className="logo">Fai₹Share</h1>
-=======
       <div className="logo-wrapper">
         <img src="/logo.svg" alt="Fai₹Share logo" className="logo-img" />
         <h1 className="logo">Fai₹Share</h1>
       </div>
 
->>>>>>> gh-pages
       <div className="app">
         <div className="sidebar">
           <FriendList
@@ -84,14 +81,12 @@ export default function App() {
             {showAddF ? "Close" : "Add Friend"}
           </Button>
         </div>
+
         {selectedFriend && (
           <FormSplitBill
             selectedFriend={selectedFriend}
             onSplitBill={handleSplitBillValue}
-<<<<<<< HEAD
-=======
             key={selectedFriend.id}
->>>>>>> gh-pages
           />
         )}
       </div>
@@ -203,11 +198,13 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [paidByUser, SetPaidBill] = useState("");
   const [payer, setPayer] = useState("user");
   const paidByFriend = bill ? bill - paidByUser : "";
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!bill || !paidByUser) return;
     onSplitBill(payer === "user" ? paidByFriend : -paidByUser);
   }
+
   return (
     <form className="form-split-bill" onSubmit={handleSubmit}>
       <h2>Split a bill with {selectedFriend.name}</h2>
