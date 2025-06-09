@@ -63,7 +63,11 @@ export default function App() {
 
   return (
     <>
-      <h1 className="logo">Fai₹Share</h1>
+      <div className="logo-wrapper">
+        <img src="/logo.svg" alt="Fai₹Share logo" className="logo-img" />
+        <h1 className="logo">Fai₹Share</h1>
+      </div>
+
       <div className="app">
         <div className="sidebar">
           <FriendList

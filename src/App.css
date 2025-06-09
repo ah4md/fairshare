@@ -1,15 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin: 40px auto 30px;
+}
+
 .logo {
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
-  text-align: center;
-  color: #3a86ff;
+  font-size: 6rem;
+  color: rgb(58, 134, 255);
   font-weight: 600;
-  margin: 30px auto 20px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
 }
 
 :root {
