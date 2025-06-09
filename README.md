@@ -1,5 +1,5 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 # 💸 Fai₹Share - Bill Splitting App
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 **Fai₹Share** is a modern and lightweight bill-splitting web app built with **React + Vite**, designed to make tracking shared expenses with friends simple and intuitive.
 
